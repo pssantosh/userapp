@@ -8,15 +8,16 @@ User
 -   LastName
 -   Password
 
+base_url: https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev
 
 1. getusers - Get all the users
-endpoint:   https://igrp4yzg2m.execute-api.us-east-1.amazonaws.com/dev/users/
+endpoint:   base_url/users/
 
 2. getuserbyid - Get user by userId
-endpoint:   https://igrp4yzg2m.execute-api.us-east-1.amazonaws.com/dev/users/<userId>
+endpoint:   base_url/users/<userId>
 
 3. createuser - Adding new user
-endpoint:   https://igrp4yzg2m.execute-api.us-east-1.amazonaws.com/dev/users/
+endpoint:   base_url/users/
 Sample request body:
 {
     "userId": "1001",
@@ -27,17 +28,12 @@ Sample request body:
 }
 
 4. updateemailbyid - Update email by userId
-endpoint:   https://igrp4yzg2m.execute-api.us-east-1.amazonaws.com/dev/users/
+endpoint:   base_url/users/
 {
     "userId": "1001",
     "email": "test.user1001@gmail.com"
 }
 
 5. deleteuser - Delete User by userId
-endpoint:   https://igrp4yzg2m.execute-api.us-east-1.amazonaws.com/dev/users/<userId>
+endpoint:   base_url/users/<userId>
 
-
-
-Postman collection public link:
-https://www.getpostman.com/collections/a6df4ce80a19cfd80d98
-Note: Please make sure the base url variable are set before running the collection
